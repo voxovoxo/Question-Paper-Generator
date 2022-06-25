@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Question paper Generator</title>
+    <script src="https://kit.fontawesome.com/d7771001ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: #16477a;
+        }
+        #navbarSupportedContent > ul > li:nth-child(n) > a {
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 0 1.5rem;
+        }
+            h6 {
+            font-family: sans-serif;
+            margin-top: 2.5px;
+        }
+        .dropbtn {
+            background-color: #2a687d;
+            color: white;
+            font-family: sans-serif;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            padding: 0 1.5rem;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #2a687d;
+        }
+        .user{
+            margin-top:150px;
+           margin-left: 30px;
+        }
+        #services {
+            padding: 80px 0;
+        }
+
+        .service-img {
+            width: 100px;
+            margin-top: 20px;
+        }
+            .services{
+            padding: 20px;
+        }
+
+                .services h4 {
+                    padding: 5px;
+                    margin-top: 25px;
+                    text-transform: uppercase;
+                }
+                h1,p{
+                   color: #fff;
+                }
+        .button {
+            background-color: #fff;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="static/assets/images/qpg.png" align="left" width="60" height="60" />
+                    <h4>
+                        OUESTION PAPER<br />
+                        GENERATOR
+                    </h4>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active"<h6>HOME</h6></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">MENU</button>
+                                <div class="dropdown-content">
+                                    <a href="courses.html">COURSES</a>
+                                    <a href="generate.php">GENERATE QUESTION PAPER</a>
+                                    <a href="list.html">SHOW ALL QUESTION PAPERS</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.html"><h6>LOGOUT</h6></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="image2">
+            <img class="user" src="static/assets/images/user.png" width="80" height="80" />
+        </div>
+        <div class="text2">
+            <h1>
+                Welcome !!!
+            </h1>
+        </div>
+    </div>
+    <hr />
+    <section id="features">
+        <div class="container text-center">
+            <h1 class="title">What are you looking for?</h1>
+            <div class="row text-center">
+                <div class="col-md-4 features">
+                    <img src="static/assets/images/img1.png" width="170" height="170" class="features-img">
+                    <h4>Courses</h4>
+                    <p>Add courses according to your institute. Subject, chapters , and questions of the respective chapters are included in "Courses" section. You can also remove a course anytime.</p>
+                    <a href="courses.html"><button class="button">
+                        Courses
+                    </button></a>
+                </div> 
+                <div class="col-md-4 features">
+                    <img src="static/assets/images/img2.png" width="170" height="170" class="features-img">
+                    <h4>Generate Question Paper</h4>
+                    <p>Select a particular course and its subject, pick out questions from the questions list according to the marks. You can add and remove questions.</p>
+                   <a href="generate.php"> <button class="button">
+                        Generate Question Paper
+                    </button></a>
+                </div>
+                <div class="col-md-4 features">
+                    <img src="static/assets/images/pdf.png" width="170" height="170" class="features-img">
+                    <h4>All Question Papers</h4>
+                    <p>View all the Question papers generated by you. You can also modify the question paper if you want to. Options like mailing the question paper to youself, saving it as pdf or printing it are available.
+                        </p>
+                    <a href="list.html"><button class="button" onclick="saqp.html">
+                        All Question Papers
+                    </button></a>
+                </div>
+            </div>
+        </div>
+        </section>
+</body>
+</html>
